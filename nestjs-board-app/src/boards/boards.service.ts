@@ -11,8 +11,8 @@ export class BoardsService {
     creatBoard(title: string, description: string){
         const board: Board = {
             id: uuid(),
-            title: title,
-            description, //자바스크립트에서 이름과 인수랑같다면 생략가능 14줄 title: title과 같음
+            title, //자바스크립트에서 이름과 인수랑같다면 생략가능. title: title과 같음
+            description, 
             status: BoardStatus.PUBLIC,
         }
         
